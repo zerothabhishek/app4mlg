@@ -7,7 +7,7 @@ class Account < ActiveRecord::Base
   end
   
   def verify_it
-    update_attribute(:verified, :true)
+    update_attribute(:verified, true)
   end
   
 end

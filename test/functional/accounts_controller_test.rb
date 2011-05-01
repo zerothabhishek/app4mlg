@@ -5,6 +5,19 @@ class AccountsControllerTest < ActionController::TestCase
     @account = accounts(:one)
   end
 
+  # These two test the search functionality. Written manually - not via scaffold  
+  test "search should give accounts with matching first or last name" do
+    searchstring = @account.first_name
+    get :search, :q => searchstring
+    assert_equal [@account], assigns(:accounts)
+  end
+  
+  test "search should render the index view template" do
+    get :search, :q => "abhishek"
+    assert_template :index
+  end
+
+  ## Tests hereafter are generated via the rails scaffold
   test "should get index" do
     get :index
     assert_response :success
@@ -46,4 +59,5 @@ class AccountsControllerTest < ActionController::TestCase
 
     assert_redirected_to accounts_path
   end
+  
 end

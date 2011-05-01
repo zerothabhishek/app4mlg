@@ -1,15 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  address: MyText
-  phone_number: MyString
-  email: MyString
+  first_name: abhishek
+  last_name: yadav
+  address: some address text
+  phone_number: 9900887766
+  email: something@example.com
 
 two:
-  first_name: MyString
-  last_name: MyString
-  address: MyText
-  phone_number: MyString
-  email: MyString
+  first_name: abhi2
+  last_name: yadav2
+  address: some other random text
+  phone_number: 8800997766
+  email: something2@example.com

@@ -29,6 +29,6 @@ gem 'stalker', '0.8.0'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :development, :test do
+   gem 'mocha', '0.9.10'
+end

@@ -3,8 +3,7 @@ class Account < ActiveRecord::Base
   after_create :inform_Q
   
   def inform_Q
-    p "hi"
-    #Stalker.enqueue("account.verify", :account_id => self.id)
+    Stalker.enqueue("account.verify", :account_id => self.id)
   end
   
   def verify_it

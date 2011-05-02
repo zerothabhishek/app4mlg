@@ -1,5 +1,5 @@
 
-## Solution to [MLG](www.majorleaguegaming.com) coding problem for recruitment.
+## Solution to [MLG](http://www.majorleaguegaming.com) coding problem for recruitment.
 
 ###The problem:
 
@@ -27,19 +27,19 @@ Tests: `rake:test`
 ### The Code.
 The most relevant code is in the following files -
 
-_app/controllers/accounts_controller.rb_ : contains the Account controller along with the search action  
+**app/controllers/accounts_controller.rb** : contains the Account controller along with the search action  
 
-_app/models/account.rb_ : contains the Account model, which has the methods for informing the queue, and another one for marking an account as verified  
+**app/models/account.rb** : contains the Account model, which has the methods for informing the queue, and another one for marking an account as verified  
 
-_lib/jobs.rb_ : defines the "account.verify" worker that picks up items from the queue and executes them in the background.
+**lib/jobs.rb** : defines the "account.verify" worker that picks up items from the queue and executes them in the background.
 
-_lib/tasks/jobs.rake_ : the rake task that starts the worker that can perform the background job by picking up items from the queue.
+**lib/tasks/jobs.rake** : the rake task that starts the worker that can perform the background job by picking up items from the queue.
 
-_test/unit/account_test.rb_ : unit tests for the account model 
+**test/unit/account_test.rb** : unit tests for the account model 
 
-_test/functional/account_controller_test.rb_ : functional tests - tests the actions in the AccountsController.
+**test/functional/account_controller_test.rb** : functional tests - tests the actions in the AccountsController.
 
-_test/integration/account_creation_flow_test.rb_ : tests the steps in the flow for account creation - filling the form, creation of account record, and showing the account page
+**test/integration/account_creation_flow_test.rb** : tests the steps in the flow for account creation - filling the form, creation of account record, and showing the account page
 
-_test/integration/background_job_flow_test.rb: tests the flow of the rails application inserting a background job to the Queue.
+**test/integration/background_job_flow_test.rb**: tests the flow of the rails application inserting a background job to the Queue.
 

@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-require "deploy/capistrano_database"
+require "config/deploy/capistrano_database.rb"
 
 set :application, "app4mlg"
 set :repository,  "git@github.com:zerothabhishek/manjaa.git"

@@ -18,8 +18,7 @@ Bonus:
 
 ### Solution.
 
-This rails application.
-Deployed [here]("")
+The rails application deployed [here]("http://li161-110.members.linode.com:4000")
 
 Queue used: **beanstalkd** 
 Beanstalk client: the `stalker:start` rake task (uses Stalker gem)

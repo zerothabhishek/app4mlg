@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "deploy/capistrano_database"
 
 set :application, "app4mlg"
 set :repository,  "git@github.com:zerothabhishek/manjaa.git"

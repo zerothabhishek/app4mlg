@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20110501105409) do
     t.text     "address"
     t.string   "phone_number"
     t.string   "email"
-    t.boolean  "verified",     :default => false
+    t.boolean  "verified",     :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

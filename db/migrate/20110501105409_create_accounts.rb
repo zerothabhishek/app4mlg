@@ -6,7 +6,7 @@ class CreateAccounts < ActiveRecord::Migration
       t.text :address
       t.string :phone_number
       t.string :email
-      t.boolean :verified, :default => :false
+      t.boolean :verified, :default => 0
 
       t.timestamps
     end

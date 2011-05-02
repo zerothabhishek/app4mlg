@@ -20,9 +20,9 @@ Bonus:
 
 The rails application deployed [here]("http://li161-110.members.linode.com:4000")
 
-Queue used: **beanstalkd** 
-Beanstalk client: the `stalker:start` rake task (uses Stalker gem)
-Tests: `rake:test`
+Queue used: **beanstalkd**   
+Beanstalk client: the `stalker:start` rake task (uses Stalker gem)  
+Tests: `rake:test`  
 
 ### The Code.
 The most relevant code is in the following files -

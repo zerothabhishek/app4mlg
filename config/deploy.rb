@@ -2,7 +2,7 @@ require "bundler/capistrano"
 require "config/deploy/capistrano_database.rb"
 
 set :application, "app4mlg"
-set :repository,  "git@github.com:zerothabhishek/manjaa.git"
+set :repository,  "git@github.com:zerothabhishek/app4mlg.git"
 
 set :scm, :git
 set :user, "root"
